@@ -128,11 +128,11 @@ class DBAcademyHelperConstants:
 
     @property
     def CATALOG_SPARK_DEFAULT(self) -> str:
-        return "spark_catalog"
+        return "genai_engineering"
 
     @property
     def CATALOG_UC_DEFAULT(self) -> str:
-        return "hive_metastore"
+        return "genai_engineering"
 
     @property
     def TROUBLESHOOT_ERROR_TEMPLATE(self) -> str:
