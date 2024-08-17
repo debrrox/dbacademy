@@ -128,11 +128,11 @@ class DBAcademyHelperConstants:
 
     @property
     def CATALOG_SPARK_DEFAULT(self) -> str:
-        return "genai_engineering"
+        return "playground_dev"
 
     @property
     def CATALOG_UC_DEFAULT(self) -> str:
-        return "genai_engineering"
+        return "playground_dev"
 
     @property
     def TROUBLESHOOT_ERROR_TEMPLATE(self) -> str:
