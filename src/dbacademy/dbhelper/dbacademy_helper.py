@@ -321,15 +321,18 @@ class DBAcademyHelper:
         :return: the prescribed name of the catalog that the consumer is expected to use.
         """
         if not self.lesson_config.is_uc_enabled_workspace:
+            print("TEST 1")
             # If this is not a UC workspace, then we use the default for spark
             return dbh_constants.DBACADEMY_HELPER.CATALOG_SPARK_DEFAULT
 
         elif not self.lesson_config.create_catalog:
+            print("TEST 2")
             # We are not creating a catalog, use teh default value
             return dbh_constants.DBACADEMY_HELPER.CATALOG_UC_DEFAULT
 
         else:
             # If we are creating a catalog, we will use a user-specific catalog
+            print("TEST 3")
             return self.to_catalog_name(username=self.username,
                                         lesson_name=self.lesson_config.name)
 
